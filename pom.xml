@@ -4,16 +4,27 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.bob</groupId>
-    <artifactId>base</artifactId>
+    <groupId>com.bob.commons</groupId>
+    <artifactId>bob-base</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+
+    <description>bob架构之base项目</description>
+
+    <developers>
+        <developer>
+            <name>bob</name>
+            <email>bobyang_coder@163.com</email>
+        </developer>
+    </developers>
+
+
     <modules>
         <module>base-parent</module>
         <module>base-common</module>
-        <module>base-mybatis-provider</module>
-        <module>base-mybatis-api</module>
-        <module>mybatis-generator</module>
+        <module>commons-base</module>
+        <module>commons-databse</module>
+        <module>commons-web-spring</module>
     </modules>
 
 

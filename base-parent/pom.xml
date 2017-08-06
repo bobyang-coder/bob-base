@@ -4,9 +4,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.bob</groupId>
+    <groupId>com.bob.commons</groupId>
     <artifactId>base-parent</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <!-- 集中定义依赖版本号 -->
@@ -17,7 +17,7 @@
         <mybatis.spring.version>1.2.2</mybatis.spring.version>
         <mybatis.paginator.version>1.2.15</mybatis.paginator.version>
         <mysql.version>6.0.5</mysql.version>
-        <slf4j.version>1.6.4</slf4j.version>
+        <slf4j.version>1.7.7</slf4j.version>
         <jackson.version>2.4.2</jackson.version>
         <druid.version>1.0.9</druid.version>
         <httpclient.version>4.3.5</httpclient.version>
@@ -152,6 +152,11 @@
             </dependency>
             <dependency>
                 <groupId>org.springframework</groupId>
+                <artifactId>spring-web</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
                 <artifactId>spring-jdbc</artifactId>
                 <version>${spring.version}</version>
             </dependency>
@@ -232,7 +237,13 @@
                 <artifactId>freemarker</artifactId>
                 <version>${freemarker.version}</version>
             </dependency>
-
+            <!--json-->
+            <dependency>
+                <groupId>net.sf.json-lib</groupId>
+                <artifactId>json-lib</artifactId>
+                <version>2.4</version>
+                <classifier>jdk15</classifier>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 

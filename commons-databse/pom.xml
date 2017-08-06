@@ -4,13 +4,13 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>base-parent</artifactId>
-        <groupId>com.bob</groupId>
-        <version>1.0-SNAPSHOT</version>
+        <groupId>com.bob.commons</groupId>
+        <version>1.0.0-SNAPSHOT</version>
         <relativePath>../base-parent/pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>mybatis-generator</artifactId>
+    <artifactId>commons-databse</artifactId>
 
 
 </project>
