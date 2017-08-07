@@ -6,11 +6,11 @@
     <parent>
         <groupId>com.bob.commons</groupId>
         <artifactId>base-parent</artifactId>
-        <version>1.0.0-SNAPSHOT</version>
+        <version>${bob.project.version}</version>
         <relativePath>../base-parent/pom.xml</relativePath>
     </parent>
     <artifactId>commons-web-spring</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>${bob.project.version}</version>
     <packaging>jar</packaging>
 
 
@@ -20,20 +20,18 @@
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
             <version>${spring.version}</version>
-            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-beans</artifactId>
             <version>${spring.version}</version>
-            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-webmvc</artifactId>
             <version>${spring.version}</version>
-            <scope>provided</scope>
         </dependency>
+
         <!-- JSP相关 -->
         <dependency>
             <groupId>jstl</groupId>
@@ -42,7 +40,7 @@
         </dependency>
         <dependency>
             <groupId>javax.servlet</groupId>
-            <artifactId>servlet-api</artifactId>
+            <artifactId>javax.servlet-api</artifactId>
             <version>${servlet-api.version}</version>
             <scope>provided</scope>
         </dependency>
@@ -70,7 +68,7 @@
         <dependency>
             <groupId>com.bob.commons</groupId>
             <artifactId>commons-base</artifactId>
-            <version>${project.version}</version>
+            <version>${bob.project.version}</version>
         </dependency>
     </dependencies>
 

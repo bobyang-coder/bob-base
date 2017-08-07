@@ -4,5 +4,6 @@
 /.settings
 /*.iml
 /.idea
-/.idea/
 /base-parent/base-parent.iml
+/base-common/target/
+/base-common/base-common.iml
